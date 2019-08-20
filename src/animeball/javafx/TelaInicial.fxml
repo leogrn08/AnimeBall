@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@telainicial.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="animeball.javafx.TelaInicialController">
+   <children>
+      <Button fx:id="myAnimeButton" layoutX="256.0" layoutY="235.0" mnemonicParsing="false" onAction="#myAnimeButton" text="Meus Animes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="sairButton" layoutX="280.0" layoutY="330.0" mnemonicParsing="false" onAction="#sairButton" text="Sair" />
+      <ImageView fitHeight="164.0" fitWidth="317.0" layoutX="143.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/title.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usuarioTextField" layoutX="256.0" layoutY="223.0" />
+      <Button fx:id="entrarButton" layoutX="236.0" layoutY="296.0" mnemonicParsing="false" onAction="#entrarButton" text="Entrar" />
+      <Button fx:id="criarContaButton" layoutX="305.0" layoutY="296.0" mnemonicParsing="false" onAction="#criarContaButton" text="Criar conta" />
+      <PasswordField fx:id="senhaPasswordField" layoutX="256.0" layoutY="262.0" />
+      <Label fx:id="usuarioLabel" layoutX="206.0" layoutY="228.0" text="Usuário:" />
+      <Label fx:id="senhaLabel" layoutX="210.0" layoutY="267.0" text="Senha:" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.AnchorPane{
+    -fx-background-color: #3c5aa6;
+}
+
+.TabPane{
+    -fx-background-color: #3c5aa6;
+}
+
+.table-view{
+    -fx-background-color: #2a75bb;
+}
+
+.table-view .cell{
+    -fx-border-color: #E9F3F4;
+    -fx-text-fill: #E9F3F4;
+    -fx-background-color: transparent;
+}
+
+.table-view .cell:hover{
+    -fx-background-color: #c7a008;
+}
+
+.table-view .cell:pressed{
+    -fx-background-color: #ffcb05;
+}
+
+.label{
+    -fx-text-fill: #E9F3F4;
+}
+
+.button{
+    -fx-border-color: #E9F3F4;
+    -fx-text-fill: #E9F3F4;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: #2a75bb;
+}
+
+.combo-box{
+    -fx-border-color: #E9F3F4;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: #2a75bb;
+}
+
+.combo-box:hover{
+    -fx-background-color: #c7a008;
+}
+
+.combo-box:pressed{
+    -fx-background-color: #ffcb05;
+}
+
+.combo-box .cell{
+    -fx-text-fill: #E9F3F4;
+    -fx-border-radius: 0px;
+}
+
+.text-field{
+    -fx-border-color: #E9F3F4;
+    -fx-text-fill: #E9F3F4;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: #2a75bb;
+}
+
+.text-field:hover{
+    -fx-background-color: #c7a008;
+}
+
+.text-field:focused{
+    -fx-background-color: #c7a008;
+}
+
+.button:hover{
+    -fx-background-color: #c7a008;
+}
+
+.button:pressed{
+    -fx-background-color: #ffcb05;
+}

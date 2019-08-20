@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="animeball.javafx.MeusAnimesController">
+    <stylesheets>
+        <URL value="@meusanimes.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="200.0" styleClass="Pane">
+         <children>
+            <TextField fx:id="pesquisarAnime" layoutX="8.0" layoutY="64.0" onMouseClicked="#clearTextField" prefHeight="25.0" prefWidth="180.0" text="Nome do anime..." />
+            <ComboBox fx:id="numEpCBox" layoutX="10.0" layoutY="103.0" prefHeight="25.0" prefWidth="147.0" promptText="Número de episódios" styleClass="comboBox" />
+            <ComboBox fx:id="anoCBox" layoutX="10.0" layoutY="140.0" prefHeight="25.0" prefWidth="147.0" promptText="Ano de lançamento" styleClass="comboBox" />
+            <ComboBox fx:id="categoriaCBox" layoutX="10.0" layoutY="175.0" prefHeight="25.0" prefWidth="147.0" promptText="Categoria" styleClass="comboBox" />
+            <Button fx:id="filtrarButton" layoutX="74.0" layoutY="213.0" mnemonicParsing="false" onAction="#filtrarButton" text="Filtrar" />
+            <Button fx:id="addAnimeButton" layoutX="48.0" layoutY="309.0" mnemonicParsing="false" onAction="#addAnimeButton" text="Adicionar anime" />
+            <Button fx:id="voltarButton" layoutX="75.0" layoutY="359.0" mnemonicParsing="false" onAction="#voltarButton" text="Voltar" />
+            <Label layoutX="30.0" layoutY="14.0" text="Meus animes">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="clearNumEpButton" layoutX="164.0" layoutY="103.0" mnemonicParsing="false" onAction="#clearNumEpButton" prefHeight="25.0" prefWidth="25.0" text="x" />
+            <Button fx:id="clearAnoButton" layoutX="164.0" layoutY="140.0" mnemonicParsing="false" onAction="#clearAnoButton" prefHeight="25.0" prefWidth="25.0" text="x" />
+            <Button fx:id="clearCategoriaButton" layoutX="164.0" layoutY="175.0" mnemonicParsing="false" onAction="#clearCategoriaButton" prefHeight="25.0" prefWidth="25.0" text="x" />
+            <Button fx:id="gerenciarButton" layoutX="65.0" layoutY="258.0" mnemonicParsing="false" onAction="#gerenciarButton" text="Gerenciar" />
+         </children>
+      </Pane>
+      <ListView fx:id="animeListView" layoutX="200.0" prefHeight="400.0" prefWidth="400.0" styleClass="ListView" />
+   </children>
+</AnchorPane>

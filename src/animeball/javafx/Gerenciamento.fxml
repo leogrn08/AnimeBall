@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="animeball.javafx.GerenciamentoController">
+    <stylesheets>
+        <URL value="@gerenciamento.css" />
+    </stylesheets>
+   <children>
+      <TabPane prefHeight="366.0" prefWidth="600.0" styleClass="TabPane" stylesheets="@gerenciamento.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Usuários">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="userTableView" layoutX="110.0" layoutY="56.0" prefHeight="210.0" prefWidth="381.0">
+                          <columns>
+                            <TableColumn fx:id="idUsuarioColumn" prefWidth="94.0" text="id" />
+                            <TableColumn fx:id="nomeUsuarioColumn" prefWidth="94.0" text="nome" />
+                              <TableColumn fx:id="senhaUsuarioColumn" prefWidth="95.0" text="senha" />
+                              <TableColumn fx:id="cargoUsuarioColumn" prefWidth="95.0" text="cargo" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Animes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="animeTableView" layoutX="187.0" layoutY="86.0" prefHeight="200.0" prefWidth="226.0">
+                          <columns>
+                            <TableColumn fx:id="idAnimeColumn" prefWidth="75.0" text="id" />
+                            <TableColumn fx:id="nomeAnimeColumn" prefWidth="75.0" text="nome" />
+                              <TableColumn fx:id="usuarioAnimeColumn" prefWidth="75.0" text="usuario" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Quantidades">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="userAnimeQuantidadeTableView" layoutX="69.0" layoutY="69.0" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="userAnimeQuantidadeColumn" prefWidth="93.0" text="Usuário" />
+                            <TableColumn fx:id="animeQuantidadeColumn" prefWidth="106.0" text="Nº de animes" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="animeCategoriaQuantidadeTableView" layoutX="325.0" layoutY="69.0" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="animeCategoriaQuantidadeColumn" prefWidth="101.0" text="Anime" />
+                            <TableColumn fx:id="categoriaQuantidadeColumn" prefWidth="98.0" text="Nº de categorias" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="voltarButton" layoutX="274.0" layoutY="374.0" mnemonicParsing="false" onAction="#voltarButton" text="Voltar" />
+   </children>
+</AnchorPane>

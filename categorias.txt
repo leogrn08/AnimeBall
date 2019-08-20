@@ -1,0 +1,13 @@
+﻿Ação
+Aventura
+Comédia
+Drama
+Slice of Life
+Fantasia
+Magia
+Sobrenatural
+Terror
+Mistério
+Psicológico
+Romance
+Sci-Fi

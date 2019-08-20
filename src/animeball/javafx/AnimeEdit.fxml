@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="animeball.javafx.AnimeEditController">
+   <children>
+      <TextField fx:id="animeName" layoutX="211.0" layoutY="97.0" />
+      <TextField fx:id="numEp" layoutX="211.0" layoutY="126.0" />
+      <TextField fx:id="ano" layoutX="211.0" layoutY="155.0" />
+      <Text layoutX="20.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="addImageButton" layoutX="444.0" layoutY="97.0" mnemonicParsing="false" onAction="#addImageButton" text="Adicionar imagem" />
+      <ImageView fx:id="image" fitHeight="180.0" fitWidth="140.0" layoutX="422.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="concluirButton" layoutX="181.0" layoutY="338.0" mnemonicParsing="false" onAction="#concluirButton" text="Concluir" />
+      <Button fx:id="cancelarButton" layoutX="353.0" layoutY="338.0" mnemonicParsing="false" onAction="#cancelarButton" text="Cancelar" />
+      <Label layoutX="201.0" layoutY="30.0" text="Editar anime">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="96.0" text="Nome do anime:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="125.0" text="Número de episódios:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="154.0" text="Ano de lançamento:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="212.0" text="Categoria:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="183.0" text="Link para assistir:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="excluirButton" layoutX="275.0" layoutY="338.0" mnemonicParsing="false" onAction="#excluirButton" text="Excluir" />
+      <TextField fx:id="link" layoutX="211.0" layoutY="184.0" />
+      <Button fx:id="removeCategoriaButton" layoutX="244.0" layoutY="268.0" mnemonicParsing="false" onAction="#removeCategoriaButton" text="&lt;&lt;&lt;" />
+      <Button fx:id="addCategoriaButton" layoutX="244.0" layoutY="227.0" mnemonicParsing="false" onAction="#addCategoriaButton" text="&gt;&gt;&gt;" />
+      <ListView fx:id="selectedCategoriasListView" layoutX="285.0" layoutY="216.0" prefHeight="89.0" prefWidth="113.0" />
+      <ListView fx:id="allCategoriasListView" layoutX="131.0" layoutY="216.0" prefHeight="89.0" prefWidth="113.0" />
+   </children>
+   <stylesheets>
+      <URL value="@animeedit.css" />
+   </stylesheets>
+</AnchorPane>

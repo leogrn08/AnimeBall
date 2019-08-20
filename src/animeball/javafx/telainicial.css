@@ -1,0 +1,44 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+
+#AnchorPane{
+    -fx-background-image: url('../resources/giphy.gif');
+    -fx-background-size: 600px 400px;
+}
+
+#title{
+    -fx-text-fill:  #E9F3F4;
+}
+
+.button{
+    -fx-border-color: #2a75bb;
+    -fx-text-fill: #2a75bb;
+    -fx-font-weight: bold;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: rgba(255, 203, 5, 0.3);
+}
+
+.button:hover{
+    -fx-background-color: #ffcb05;
+}
+
+.button:pressed{
+    -fx-background-color: #FFFC49;
+}
+
+.text-field{
+    -fx-border-color: #2a75bb;
+    -fx-text-fill: #2a75bb;
+    -fx-font-weight: bold;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: rgba(255, 203, 5, 0.3)
+}
+
+.label{
+    -fx-text-fill: #2a75bb;
+}
